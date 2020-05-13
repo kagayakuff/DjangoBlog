@@ -175,13 +175,13 @@ PAGINATE_BY = 10
 CACHE_CONTROL_MAX_AGE = 2592000
 # cache setting
 CACHES = {
+    # 'default': {
+    #     'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
+    #     'LOCATION': '0.0.0.0:11211',
+    #     'KEY_PREFIX': 'django_test' if TESTING else 'djangoblog',
+    #     'TIMEOUT': 60 * 60 * 10
+    # },
     'default': {
-        'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
-        'LOCATION': '0.0.0.0:11211',
-        'KEY_PREFIX': 'django_test' if TESTING else 'djangoblog',
-        'TIMEOUT': 60 * 60 * 10
-    },
-    'locmemcache': {
         'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
         'TIMEOUT': 10800,
         'LOCATION': 'unique-snowflake',
