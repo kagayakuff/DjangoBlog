@@ -205,7 +205,7 @@ def get_blog_setting():
             setting.show_google_adsense = False
             setting.open_site_comment = True
             setting.analyticscode = ''
-            setting.beiancode = ''
+            setting.beiancode = '京ICP备19011312号-1'
             setting.show_gongan_code = False
             setting.save()
         value = BlogSettings.objects.first()
