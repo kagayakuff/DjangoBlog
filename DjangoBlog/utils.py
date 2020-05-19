@@ -210,7 +210,7 @@ def get_blog_setting():
             setting.show_gongan_code = True
             setting.save()
         value = BlogSettings.objects.first()
-        logger.info(f'set cache get_blog_setting value={value}')
+        logger.info('set cache get_blog_setting value={%s}' % value)
         #cache.set('get_blog_setting', value)
         return value
 
