@@ -189,7 +189,7 @@ def parse_dict_to_url(dict):
 
 def get_blog_setting():
     value = cache.get('get_blog_setting')
-    if value:
+    if 1==2 and value:
         return value
     else:
         from blog.models import BlogSettings
