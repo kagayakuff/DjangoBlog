@@ -206,8 +206,8 @@ def get_blog_setting():
             setting.open_site_comment = True
             setting.analyticscode = ''
             setting.beiancode = '京ICP备19011312号-1'
-            setting.gongan_beiancode = '京ICP备19011312号-1'
-            setting.show_gongan_code = True
+            setting.gongan_beiancode = ''
+            setting.show_gongan_code = False
             setting.save()
         value = BlogSettings.objects.first()
         logger.info('set cache get_blog_setting value={%s}' % value)
